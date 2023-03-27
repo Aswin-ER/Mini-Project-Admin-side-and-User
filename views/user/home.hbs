@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">SHOPPING CART</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      {{#if userName}}
+        <li class="nav-item dropdown nav-end ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{userName}}
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+        </li>
+      {{else}}
+        <li class="nav-item dropdown nav-end ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/login">Login</a>
+          </div>
+        </li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
+
+<div class="heading" style="display: flex; justify-content: center;">
+    <h1>MOBILE PHONES</h1>
+  </div>
+  <section class="d-flex flex-row">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 card mx-auto mb-5" style="max-width: 300px;">
+          <img src="https://images.samsung.com/vn/smartphones/galaxy-s23/buy/kv_combo_MO_v2.jpg" class="card-img-top" alt="..." style="max-width: 300px;">
+          <div class="card-body" style="max-width: 300px;">
+            <h5 class="card-title">SAMSUNG GALAXY S23 & S23+</h5>
+            <p class="card-text">Announced 2023, February 01 Status 	Available. Released 2023, February 17</p>
+            <p class="card-text">74,000</p>
+            <a href="#" class="btn btn-secondary">BUY NOW</a>
+          </div>
+        </div>
+
+         <div class="col-12 col-sm-6 col-md-4 col-lg-6 card mx-auto mb-5" style="max-width: 300px;">
+          <img src="https://images.samsung.com/vn/smartphones/galaxy-s23/buy/kv_combo_MO_v2.jpg" class="card-img-top" alt="..." style="max-width: 300px;">
+          <div class="card-body" style="max-width: 300px;">
+            <h5 class="card-title">SAMSUNG GALAXY S23 & S23+</h5>
+            <p class="card-text">Announced 2023, February 01 Status 	Available. Released 2023, February 17</p>
+            <p class="card-text">74,000</p>
+            <a href="#" class="btn btn-secondary">BUY NOW</a>
+          </div>
+        </div>
+
+         <div class="col-12 col-sm-6 col-md-4 col-lg-6 card mx-auto mb-5" style="max-width: 300px;">
+          <img src="https://images.samsung.com/vn/smartphones/galaxy-s23/buy/kv_combo_MO_v2.jpg" class="card-img-top" alt="..." style="max-width: 300px;">
+          <div class="card-body" style="max-width: 300px;">
+            <h5 class="card-title">SAMSUNG GALAXY S23 & S23+</h5>
+            <p class="card-text">Announced 2023, February 01 Status 	Available. Released 2023, February 17</p>
+            <p class="card-text">74,000</p>
+            <a href="#" class="btn btn-secondary">BUY NOW</a>
+          </div>
+        </div>
+
+         <div class="col-12 col-sm-6 col-md-4 col-lg-6 card mx-auto mb-5" style="max-width: 300px;">
+          <img src="https://images.samsung.com/vn/smartphones/galaxy-s23/buy/kv_combo_MO_v2.jpg" class="card-img-top" alt="..." style="max-width: 300px;">
+          <div class="card-body" style="max-width: 300px;">
+            <h5 class="card-title">SAMSUNG GALAXY S23 & S23+</h5>
+            <p class="card-text">Announced 2023, February 01 Status 	Available. Released 2023, February 17</p>
+            <p class="card-text">74,000</p>
+            <a href="#" class="btn btn-secondary">BUY NOW</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
