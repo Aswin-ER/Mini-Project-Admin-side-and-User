@@ -6,7 +6,8 @@ module.exports = {
     doSignUp:(userDet)=>{
         return new Promise(async(resolve, reject)=>{
             userDet.password = await bcrypt.hash(userDet.password, 10);
-            db.get().collection(collection.USER_COLLECTION).insertOne(userDet).then((response)=>{
+            db.get().collection(collection.USER_COLLECTION).insertOne(userDet)
+            .then((response)=>{
                 console.log(response);
                 resolve(response)
             }).catch((err)=>{

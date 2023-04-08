@@ -61,11 +61,11 @@ router.post('/edituser/:id', (req, res)=>{
       res.redirect('/admin');
     })
   }else{
-    res.redirect('/admin/login');
+    res.redirect('/admin');
   }
 })
 
-router.get('/deleteUser/:id', (req, res) => {
+router.post('/deleteUser/:id', (req, res) => {
   if(req.session.adminLoggedIn){
     const userId = req.params.id;
     adminHelpers.deleteUser(userId).then(() =>{
